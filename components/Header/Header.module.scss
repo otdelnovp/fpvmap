@@ -1,0 +1,14 @@
+.header {
+    position: absolute;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    padding: 2rem 0;
+    border-bottom: 1px solid #eaeaea;
+    background: rgba(#fff, 0.5);
+    justify-content: center;
+    align-items: center;
+}
