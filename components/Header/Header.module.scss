@@ -6,9 +6,18 @@
     width: 100%;
     display: flex;
     flex: 1;
-    padding: 2rem 0;
-    border-bottom: 1px solid #eaeaea;
-    background: rgba(#fff, 0.8);
-    justify-content: center;
+    padding: 2rem;
+    color: #fff;
+    background: rgba(#007aff, 0.9);
+    justify-content: space-between;
     align-items: center;
+}
+
+.logo {
+    display: block;
+    color: #fff;
+}
+
+.profile {
+    cursor: pointer;
 }

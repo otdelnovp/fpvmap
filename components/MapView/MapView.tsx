@@ -3,7 +3,7 @@ import { YMaps, Map } from 'react-yandex-maps';
 
 import styles from './MapView.module.scss'
 
-const MapView = () => {
+export default React.memo(function MapView() {
     return (
         <>
             <YMaps>
@@ -11,6 +11,4 @@ const MapView = () => {
             </YMaps>
         </>
     )
-}
-
-export default MapView;
+})

@@ -5,6 +5,8 @@ import Layout from '../components/Layout/Layout'
 
 const MapView = dynamic(() => import('../components/MapView/MapView'))
 
+import dbConnect from '../utils/dbConnect'
+
 const Home: NextPage = () => {
     return (
         <>
@@ -16,3 +18,10 @@ const Home: NextPage = () => {
 }
 
 export default Home
+
+export const getServerSideProps = async () => {
+    dbConnect()
+    return {
+        props: {},
+    }
+}
