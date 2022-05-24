@@ -12,9 +12,11 @@ if (!MONGODB_URI) {
 //     function mongoose(): { conn: null, promise: null }
 // }
 
+// @ts-ignore
 let cached = global.mongoose
 
 if (!cached) {
+    // @ts-ignore
     cached = global.mongoose = { conn: null, promise: null }
 }
 

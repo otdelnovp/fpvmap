@@ -1,4 +1,5 @@
 import dbConnect from '../../utils/dbConnect'
+// @ts-ignore
 import User from '../../models/User'
 
 export default async function handler (req: any, res: any) {
