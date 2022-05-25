@@ -8,15 +8,9 @@ if (!MONGODB_URI) {
     )
 }
 
-// declare global {
-//     function mongoose(): { conn: null, promise: null }
-// }
-
 // @ts-ignore
 let cached = global.mongoose
-
-if (!cached) {
-    // @ts-ignore
+if (!cached) { // @ts-ignore
     cached = global.mongoose = { conn: null, promise: null }
 }
 
@@ -30,9 +24,6 @@ async function dbConnect () {
             useNewUrlParser: true,
             useUnifiedTopology: true,
             bufferCommands: false,
-            // bufferMaxEntries: 0,
-            // useFindAndModify: true,
-            // useCreateIndex: true
         }
 
         cached.promise = mongoose.connect(MONGODB_URI, opts).then(mongoose => {
