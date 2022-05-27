@@ -22,8 +22,8 @@ const Header = () => {
                 <a className={classes.logo} href="https://fpvmap.vercel.app/">
                     <Image 
                         src='/logo.png'
-                        width={120}
-                        height={35}
+                        width={140}
+                        height={44}
                         objectFit="contain"
                     />
                 </a>
@@ -42,7 +42,7 @@ const Header = () => {
                         </Avatar>
                     </Tooltip>
                 ) : (
-                    <Button variant="contained" color="secondary" startIcon={<LoginIcon />}>
+                    <Button variant="contained" color="primary" startIcon={<LoginIcon />}>
                         Sign In
                     </Button>
                 )}

@@ -1,7 +1,7 @@
 import { makeStyles } from '@mui/styles'
 import { lightBlue } from '@mui/material/colors'
 
-export const useHeaderStyles = makeStyles(() => ({
+export const useHeaderStyles = makeStyles({
     header: {
         position: 'absolute',
         zIndex: 11,
@@ -9,7 +9,7 @@ export const useHeaderStyles = makeStyles(() => ({
         left: 0,
         width: '100%',
         color: '#fff',
-        backgroundColor: lightBlue[500],
+        backgroundColor: '#222841',
     },
     logo: {
         display: 'block',
@@ -22,4 +22,4 @@ export const useHeaderStyles = makeStyles(() => ({
         textDecoration: 'none',
         color: '#fff',
     },
-}))
+})
